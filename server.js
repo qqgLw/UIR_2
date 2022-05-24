@@ -17,12 +17,12 @@ const row_count = 100;
 
 // Тестовые запросы
 const queries = [
-    { table: 'transactions_no_part', sql: `SELECT SQL_NO_CACHE * FROM transactions_no_part LIMIT ${row_count}` },
-    // { table: 'transactions_no_part', sql: `SELECT SQL_NO_CACHE * FROM transactions_no_part ORDER BY id DESC LIMIT ${row_count}` },
-    { table: 'transactions_no_part', sql: `SELECT SQL_NO_CACHE * FROM transactions_no_part WHERE id = ${test_id} LIMIT 1` },
-    { table: 'transactions_part',    sql: `SELECT SQL_NO_CACHE * FROM transactions_part LIMIT ${row_count}` },
-    // { table: 'transactions_part',    sql: `SELECT SQL_NO_CACHE * FROM transactions_part ORDER BY id DESC LIMIT ${row_count}` },
-    { table: 'transactions_part',    sql: `SELECT SQL_NO_CACHE * FROM transactions_part WHERE id = ${test_id} LIMIT 1` },
+    { table: 'blogs_no_part', sql: `SELECT SQL_NO_CACHE * FROM blogs_no_part LIMIT ${row_count}` },
+    // { table: 'blogs_no_part', sql: `SELECT SQL_NO_CACHE * FROM blogs_no_part ORDER BY id DESC LIMIT ${row_count}` },
+    { table: 'blogs_no_part', sql: `SELECT SQL_NO_CACHE * FROM blogs_no_part WHERE id = ${test_id} LIMIT 1` },
+    { table: 'blogs_part',    sql: `SELECT SQL_NO_CACHE * FROM blogs_part LIMIT ${row_count}` },
+    // { table: 'blogs_part',    sql: `SELECT SQL_NO_CACHE * FROM blogs_part ORDER BY id DESC LIMIT ${row_count}` },
+    { table: 'blogs_part',    sql: `SELECT SQL_NO_CACHE * FROM blogs_part WHERE id = ${test_id} LIMIT 1` },
 ];
 
 async function run() {
