@@ -1,3 +1,6 @@
+#created mysql data-dir initialization
+mysqld/
+
 # Logs
 logs
 *.log
