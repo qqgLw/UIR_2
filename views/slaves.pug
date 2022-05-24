@@ -1,0 +1,20 @@
+html
+  head
+    title= 'Lab6 - slaves'
+    style
+      include style.css
+  body
+    h2= header
+    .container
+      each _, i in rows
+        h3= 'MySQL ' + names[i] + ' at ' + conn[i].host + ':' + conn[i].port + ':' 
+        table
+          tr
+            th= 'id'
+            th= 'title'
+            th= 'posts_count'
+            for rec in rows[i]
+              tr
+                td= rec.id
+                td= rec.title
+                td= rec.posts_count
