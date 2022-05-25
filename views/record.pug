@@ -5,19 +5,16 @@ html
       include style.css
   body
     h2= header
-    each _, i in rows
-      h3= 'MySQL ' + names[i] + ' at ' + conn[i].host + ':' + conn[i].port
+    if msg
+      p= msg
+    if rows.length
       table
         tr
           th= 'id'
           th= 'title'
           th= 'posts_count'
-          th= 'link'
-          for rec in rows[i]
+          for rec in rows
             tr
               td= rec.id
               td= rec.title
               td= rec.posts_count
-              td
-                a(href='/id/' + rec.id) view
-

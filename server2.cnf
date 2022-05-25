@@ -1,0 +1,8 @@
+[mysqld]
+basedir         = "C:/Program Files/MySQL/MySQL Server 8.0"
+datadir         = "C:/Users/Anton/Searches/Desktop/UIR_2/independent_servers/mysqld2"
+port            = 3302
+pid-file        = "C:/Users/Anton/Searches/Desktop/UIR_2/independent_servers/mysqld2.pid"
+socket          = "C:/Users/Anton/Searches/Desktop/UIR_2/independent_servers/mysqld2.sock"
+mysqlx          = 0
+default_authentication_plugin = mysql_native_password
