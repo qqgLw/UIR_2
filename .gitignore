@@ -1,6 +1,7 @@
 #created mysql data-dir initialization
 mysqld/
 slave_servers/
+independent_servers/
 
 # Logs
 logs
