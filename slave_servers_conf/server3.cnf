@@ -1,9 +1,8 @@
 [mysqld]
-basedir         = "C:/Program Files/MySQL/MySQL Server 8.0"
-datadir         = "C:/Users/Anton/Searches/Desktop/UIR_2/slave_servers/mysqld3"
+datadir         = "./mysqld3"
 port            = 3312
-pid-file        = "C:/Users/Anton/Searches/Desktop/UIR_2/slave_servers/mysqld3.pid"
-socket          = "C:/Users/Anton/Searches/Desktop/UIR_2/slave_servers/mysqld3.sock"
+pid-file        = "./mysqld3.pid"
+socket          = "./mysqld3.sock"
 mysqlx          = 0
 server-id       = 4
 gtid_mode       = ON

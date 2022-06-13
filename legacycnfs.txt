@@ -1,0 +1,24 @@
+[mysqld]
+basedir         = "C:/Program Files/MySQL/MySQL Server 8.0"
+datadir         = "C:/Users/Anton/Searches/Desktop/UIR_2/slave_servers/mysqld1"
+port            = 3310
+pid-file        = "C:/Users/Anton/Searches/Desktop/UIR_2/slave_servers/mysqld1.pid"
+socket          = "C:/Users/Anton/Searches/Desktop/UIR_2/slave_servers/mysqld1.sock"
+mysqlx          = 0
+server-id       = 2
+gtid_mode       = ON
+enforce_gtid_consistency = ON
+default_authentication_plugin = mysql_native_password
+
+[mysqld]
+basedir         = "C:/Program Files/MySQL/MySQL Server 8.0"
+datadir         = "C:/Users/Anton/Searches/Desktop/UIR_2/mysqld"
+port            = 3305
+pid-file        = "C:/Users/Anton/Searches/Desktop/UIR_2/mysqld.pid"
+socket          = "C:/Users/Anton/Searches/Desktop/UIR_2/mysqld.sock"
+mysqlx          = 0
+server-id       = 1
+gtid_mode       = ON
+enforce_gtid_consistency = ON
+default_authentication_plugin = mysql_native_password
+
